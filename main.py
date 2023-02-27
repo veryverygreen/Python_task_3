@@ -11,7 +11,7 @@ class Negative_Number_Exception(Exception):
 
 message = "Введено не целое число"
 
-input_list = 123.5
+input_list = int(input())
 
 if input_list < 0:
     raise Negative_Number_Exception (message,input_list)
